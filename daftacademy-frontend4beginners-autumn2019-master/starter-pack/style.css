@@ -48,22 +48,24 @@ Więcej na ten temat: https://webaim.org/techniques/css/invisiblecontent/
 Sekcja pomocnicza, aby zwizualizować pozycje głównych bloków strony. Będzie usunięta w następnych krokach.
 */
 .page-header {
-    background-color: #ffb1b1;
+    background-color: #25072E;
 }
 
 .page-content {
-    background-color: #b0ffb0;
+    background-color: #25072E;
 }
 
 .page-footer {
-    background-color: #7ba3ff;
+    background-color: #25072E;
+
 }
 
 .content-section {
     background-color: #ca9aca;
 }
 .content-section:nth-child(odd) {
-    background-color: #e69fe6;
+    background-color: #25072E;
+    opacity: 1;
 }
 /*
 Koniec sekcji pomocniczej
@@ -112,4 +114,121 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 */
 .content-section {
     min-height: 100vh;
+}
+
+/* Praca domowa */
+
+.page-navigation__item > a, .social-links__item > a {
+    color: #ec008c;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    letter-spacing: 6.7px;
+    text-decoration: none;
+}
+
+.band-members__name, .concerts__date {
+    color: #ccc8ff;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    letter-spacing: 3.5px;
+}
+
+.band-members__desc, .concerts__location {
+    color: #ccc8ff;
+    opacity: 0.5;
+    font-family: Open Sans;
+    letter-spacing: 3.5px;
+}
+
+.button {
+    background-color: #ccc8ff;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+h1 ,h2 {
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 4.5px
+}
+
+h2 {
+    font-size: 15px;
+}
+
+#home > .band-members {
+    text-align: left;
+}
+
+
+#home > .band-members > li.band-members__item {
+    display: inline-block;
+    /* overflow: auto; */
+    vertical-align: middle;
+}
+
+img.band-members__image {
+    height: 310px;
+    /* margin:0px auto 0px auto; */
+}
+
+#about > img {
+    height: 400px;
+}
+
+#about > .about-section__desc {
+    text-align: left;
+}
+
+.concerts {
+    display: grid;
+    /*   grid-template-columns: 100px 100px 100px; */
+    /*   grid-template-rows: 100px 100px 100px; */
+      grid-template: repeat(2, 400px) / repeat(2, 400px);
+      float:right;
+}
+
+.concerts > .concerts__item > img {
+    height: 250px;
+}
+
+
+.gallery {
+    display: grid;
+    /* float:left; */
+    /*   grid-template-columns: 100px 100px 100px; */
+    /*   grid-template-rows: 100px 100px 100px; */
+      grid-template: repeat(3, 250px) / repeat(3, 250px);
+}
+.gallery > .gallery__item > img {
+    height: 160px;
+    /* float:left; */
+}
+
+#contact > img {
+    display: block;
+    float:left;
+
+}
+
+#contact > .address {
+    display: block;
+    float:right;
+}
+
+
+#contact > .form{
+    float:left;
+    display: block;
+}
+
+#contact > .form > .form__field > .button{
+    float:left;
 }
