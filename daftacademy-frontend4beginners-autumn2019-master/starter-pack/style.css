@@ -57,7 +57,6 @@ Sekcja pomocnicza, aby zwizualizować pozycje głównych bloków strony. Będzie
 
 .page-footer {
     background-color: #25072E;
-
 }
 
 .content-section {
@@ -165,6 +164,10 @@ h2 {
 
 #home > .band-members {
     text-align: left;
+}
+
+.band-members__item {
+    /* vertical-align: text-top; */
 }
 
 
